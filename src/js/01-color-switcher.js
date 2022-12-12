@@ -2,7 +2,7 @@ const startButEl = document.querySelector('button[data-start]');
 const stopButEl = document.querySelector('button[data-stop]');
 const bodyEl = document.querySelector('body');
 const CANGE_DELAY = 1000;
-
+let constId;
 startButEl.addEventListener('click',startChangeColor)
 
 function startChangeColor(e){
