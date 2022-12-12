@@ -21,7 +21,7 @@ const options = {
     defaultDate: new Date(),
     minuteIncrement: 1,
     onClose(selectedDates) {
-        dateSelected = selectedDates[0];
+      const dateSelected = selectedDates[0];
         const dateNow =  new Date();
         t = dateSelected - dateNow;
             if(dateSelected < dateNow){
