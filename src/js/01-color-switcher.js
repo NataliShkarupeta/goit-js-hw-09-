@@ -9,15 +9,15 @@ function startChangeColor(e){
     constId = setInterval(() =>{
         bodyEl.style.backgroundColor = getRandomHexColor();
     },CANGE_DELAY);
-    startButEl.setAttribute("disabled", "disabled")
+    startButEl.setAttribute("disabled", "true")
 }
 
 
 stopButEl.addEventListener('click',stopChangeColor)
 
-function stopChangeColor(e){
-    clearInterval(constId)
-    startButEl.disabled = false;
+function stopChangeColor(){
+    clearInterval(constId);
+    startButEl.removeAttribute("disabled");
 }
 
 
